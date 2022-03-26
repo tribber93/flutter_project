@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 64, 35, 196),
+          backgroundColor: Color.fromARGB(255, 158, 31, 31),
           title: const Text('Hello Guys Yoni Tribber Disini'),
         ),
         body: const Center(
