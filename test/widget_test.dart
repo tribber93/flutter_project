@@ -121,7 +121,67 @@ void main() {
   var y = hitungNilai2(mapel1: 80, mapel2: 85);
   print(y);
   var z = hitungNilai3(80, 90);
-}
+
+  print("---------- Pertemuan 4 ----------");
+  // final keyword (imutable)
+  // yang terdiri dari 'const' dan 'final'
+  //const
+  print('**final keyword (imutable)**');
+  print('#const');
+  const namaConst = 'Yoni Tribber';
+  print(namaConst +
+      ' <- harus langsung diisi dengan nilai ketika dideklarasikan');
+
+  //final
+  print('#final');
+  final String mahasiswaFinal;
+  mahasiswaFinal = 'Yoni Tribber';
+
+  print(mahasiswaFinal);
+
+  //null safety
+  print('**null safety**');
+  // ? ! late
+  // ? digunakan untuk mengecek nilai null atau tidak
+  String? jurusan;
+  // late digunakan untuk nanti seperti final namun nilai bisa diubah
+  // late String jurusan = "TI";
+
+  jurusan = 'Teknik Informatika';
+  // ! memastikan nilai sudah diisi
+  print(jurusan!.length);
+
+  //perulangan / looping
+  print('**perulangan**');
+  // for
+  print('#for ++');
+  for (var i = 1; i <= 5; i++) {
+    print('Nilai i = ' + i.toString());
+  }
+  print('#for --');
+  for (var i = 5; i >= 1; i--) {
+    print('Nilai i = ' + i.toString());
+  }
+
+  // while
+  print('#while');
+  int no1 = 1;
+  int no2 = 5;
+
+  while (no1 <= no2) {
+    print(no1);
+    no1++;
+  }
+
+  // DO WHILE
+  int no3 = 1;
+  int no4 = 5;
+  print('#Do While');
+  do {
+    print(no3);
+    no3++;
+  } while (no3 <= no4);
+} //end main()
 
 hitungNilai() {
   print("ini adalah fungsi hitungNilai()");
