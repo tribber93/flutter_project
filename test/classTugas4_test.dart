@@ -37,7 +37,7 @@ void main() {
   anjing.keterangan();
 }
 
-//class buah sebagai parent class
+// class buah sebagai parent class
 class Buah {
   String? nama;
   String? warna;
