@@ -3,7 +3,7 @@ void main() {
   print("---------- Pertemuan 4 ----------");
   // final keyword (imutable)
   // yang terdiri dari 'const' dan 'final'
-  //const
+  // const
   print('**final keyword (imutable)**');
   print('#const');
   const namaConst = 'Yoni Tribber';
