@@ -11,6 +11,7 @@ void main() async {
   //   print("catchError");
   // });
 
+// try catch
   try {
     var value = await func4(40);
     print(value);
@@ -20,6 +21,7 @@ void main() async {
     print("catchError");
   }
 
+  func5();
   func2();
   func3();
 }
@@ -44,5 +46,11 @@ Future<String> func4(int nilai) {
     } else {
       throw 'Error Tidak Lulus';
     }
+  });
+}
+
+Future func5() {
+  return Future.delayed(Duration(seconds: 3), () {
+    print('ini function 5');
   });
 }
