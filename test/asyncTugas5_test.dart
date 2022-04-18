@@ -1,8 +1,8 @@
 void main() async {
   print('Mencari film...');
   try {
-    var pencarian = cariFilm('Doctor Strange');
-    print(await pencarian);
+    var pencarian = await cariFilm('Doctor Strange');
+    print(pencarian);
   } catch (e) {
     print(e);
   } finally {
